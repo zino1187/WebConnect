@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MovieDefault"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/MovieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iron Man 3"
+        app:layout_constraintLeft_toRightOf="@id/img" />
+
+    <TextView
+        android:id="@+id/txt_year"
+        style="@style/MovieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-08-09"
+        app:layout_constraintBottom_toBottomOf="@id/img"
+        app:layout_constraintLeft_toRightOf="@id/img" />
+
+
+</android.support.constraint.ConstraintLayout>
